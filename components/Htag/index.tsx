@@ -1,4 +1,4 @@
-import {IHtagProps} from "./Htag.props";
+import {IHtagProps} from "./types";
 import s from './Htag.module.css'
 
 export default function Htag({tag, children}: IHtagProps): JSX.Element {
