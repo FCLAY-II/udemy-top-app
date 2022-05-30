@@ -11,9 +11,7 @@ class MyDocument extends Document {
     render(): JSX.Element {
         return (
             <Html lang="ru">
-                <Head>
-                    <title>Udemy next project</title>
-                </Head>
+                <Head/>
                 <body>
                 <Main/>
                 <NextScript/>

@@ -1,11 +1,10 @@
-import { ButtonHTMLAttributes, DetailedHTMLProps } from 'react';
+import {ButtonHTMLAttributes, DetailedHTMLProps, ReactNode} from 'react';
 
 export interface IButtonProps
-  extends DetailedHTMLProps<
-    ButtonHTMLAttributes<HTMLButtonElement>,
-    HTMLButtonElement
-  > {
-  buttonView: 'primary' | 'ghost';
+    extends DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>,
+        HTMLButtonElement> {
+    children: ReactNode;
+    buttonView: 'primary' | 'ghost';
 
-  arrow?: 'down' | 'right' | 'none';
+    arrow?: 'down' | 'right' | 'none';
 }
